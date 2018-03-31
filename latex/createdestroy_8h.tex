@@ -1,0 +1,78 @@
+\hypertarget{createdestroy_8h}{}\section{src/createdestroy.h File Reference}
+\label{createdestroy_8h}\index{src/createdestroy.\+h@{src/createdestroy.\+h}}
+
+
+crée une matrice de char de taille n$\ast$n  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{createdestroy_8h_a0dbfe65be850e1098cc0bebacc73cf3b}{create} (int n)
+\begin{DoxyCompactList}\small\item\em Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. \end{DoxyCompactList}\item 
+void \hyperlink{createdestroy_8h_aef63e0ea5b7083d1c3b31f746892af32}{destroy} (char $\ast$$\ast$matrix, int n)
+\begin{DoxyCompactList}\small\item\em libère la mémoire allouée par la grille \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+crée une matrice de char de taille n$\ast$n 
+
+2 fonctions \+:
+
+
+\begin{DoxyItemize}
+\item create(n) \+: crée une matrice carrée de char de taille n
+\item free(matrice,n) \+: libère l\textquotesingle{}espace mémoire de la matrice créée par create /
+\end{DoxyItemize}
+
+/$\ast$$\ast$ 
+\begin{DoxyParams}{Parameters}
+{\em n} & est un entier $>$= 6 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{createdestroy_8h_a0dbfe65be850e1098cc0bebacc73cf3b}\label{createdestroy_8h_a0dbfe65be850e1098cc0bebacc73cf3b}} 
+\index{createdestroy.\+h@{createdestroy.\+h}!create@{create}}
+\index{create@{create}!createdestroy.\+h@{createdestroy.\+h}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily char$\ast$$\ast$ create (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille} & $>$= 6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau char$\ast$$\ast$ de la taille passée en paramètre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{createdestroy_8h_aef63e0ea5b7083d1c3b31f746892af32}\label{createdestroy_8h_aef63e0ea5b7083d1c3b31f746892af32}} 
+\index{createdestroy.\+h@{createdestroy.\+h}!destroy@{destroy}}
+\index{destroy@{destroy}!createdestroy.\+h@{createdestroy.\+h}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+libère la mémoire allouée par la grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille de char , la taille de la grille\\
+\hline
+\end{DoxyParams}
+libère la mémoire allouée par la grille
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille carrée à libérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

@@ -1,0 +1,73 @@
+\hypertarget{structuile_8h}{}\section{src/structuile.h File Reference}
+\label{structuile_8h}\index{src/structuile.\+h@{src/structuile.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtuile__s}{tuile\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structuile_8h_afa0dd89963a4d3a0e153f5e9502f8247}\label{structuile_8h_afa0dd89963a4d3a0e153f5e9502f8247}} 
+typedef struct \hyperlink{structtuile__s}{tuile\+\_\+s} $\ast$ {\bfseries tuile}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structuile_8h_a54819b77f38ba53d5046fca07e7e3ad3}\label{structuile_8h_a54819b77f38ba53d5046fca07e7e3ad3}} 
+\hyperlink{structtuile__s}{tuile} \hyperlink{structuile_8h_a54819b77f38ba53d5046fca07e7e3ad3}{ini\+\_\+tuile} ()
+\begin{DoxyCompactList}\small\item\em C\+R\+EE A\+L\+E\+A\+T\+O\+I\+R\+E\+M\+E\+NT U\+NE T\+U\+I\+LE. \end{DoxyCompactList}\item 
+\hyperlink{structtuile__s}{tuile} $\ast$ \hyperlink{structuile_8h_a79c47c568a6578e2ea0681cfe3bb2b78}{initi\+\_\+tuiles} (int nb\+\_\+tuile)
+\begin{DoxyCompactList}\small\item\em alloue dynamiquement et A\+L\+E\+A\+T\+O\+I\+R\+E\+M\+E\+NT nb\+\_\+tuiles T\+U\+I\+L\+ES \end{DoxyCompactList}\item 
+\hyperlink{structtuile__s}{tuile} $\ast$ \hyperlink{structuile_8h_a53173602d83145b98e65df80ecb26e91}{initi\+\_\+tuile\+\_\+fichier} (F\+I\+LE $\ast$fp)
+\begin{DoxyCompactList}\small\item\em alloue dynamiquement des T\+U\+I\+L\+ES A P\+A\+R\+T\+IR D UN F\+I\+C\+H\+I\+ER \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+1 type et 3 fonctions
+
+
+\begin{DoxyItemize}
+\item type {\itshape tuile} \+: pointeur vers une structure contenant {\itshape point} \+: un tableau de char 3x2 {\itshape pos} \+: un couple d\textquotesingle{}int pour la position de la tuile {\itshape num} \+: l\textquotesingle{}identifiant unique de la tuile {\itshape ort} \+: orientation de la tuile
+\item \hyperlink{structuile_8h_a54819b77f38ba53d5046fca07e7e3ad3}{ini\+\_\+tuile(void)} \+: génère une tuile aléatoirement
+\item initi\+\_\+tuiles(nb\+\_\+tuile) \+: génère nb\+\_\+tuile aléatoirement
+\item initi\+\_\+tuiles\+\_\+fichier( F\+I\+L\+E$\ast$ fp) \+: génère les tuiles à partir d\textquotesingle{}un fichier 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{structuile_8h_a53173602d83145b98e65df80ecb26e91}\label{structuile_8h_a53173602d83145b98e65df80ecb26e91}} 
+\index{structuile.\+h@{structuile.\+h}!initi\+\_\+tuile\+\_\+fichier@{initi\+\_\+tuile\+\_\+fichier}}
+\index{initi\+\_\+tuile\+\_\+fichier@{initi\+\_\+tuile\+\_\+fichier}!structuile.\+h@{structuile.\+h}}
+\subsubsection{\texorpdfstring{initi\+\_\+tuile\+\_\+fichier()}{initi\_tuile\_fichier()}}
+{\footnotesize\ttfamily \hyperlink{structtuile__s}{tuile}$\ast$ initi\+\_\+tuile\+\_\+fichier (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+
+
+alloue dynamiquement des T\+U\+I\+L\+ES A P\+A\+R\+T\+IR D UN F\+I\+C\+H\+I\+ER 
+
+
+\begin{DoxyParams}{Parameters}
+{\em le} & fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tableau de T\+U\+I\+L\+ES R\+E\+M\+P\+L\+I\+ES 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structuile_8h_a79c47c568a6578e2ea0681cfe3bb2b78}\label{structuile_8h_a79c47c568a6578e2ea0681cfe3bb2b78}} 
+\index{structuile.\+h@{structuile.\+h}!initi\+\_\+tuiles@{initi\+\_\+tuiles}}
+\index{initi\+\_\+tuiles@{initi\+\_\+tuiles}!structuile.\+h@{structuile.\+h}}
+\subsubsection{\texorpdfstring{initi\+\_\+tuiles()}{initi\_tuiles()}}
+{\footnotesize\ttfamily \hyperlink{structtuile__s}{tuile}$\ast$ initi\+\_\+tuiles (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+tuile }\end{DoxyParamCaption})}
+
+
+
+alloue dynamiquement et A\+L\+E\+A\+T\+O\+I\+R\+E\+M\+E\+NT nb\+\_\+tuiles T\+U\+I\+L\+ES 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+tuile} & \+: nombre de tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de tuiles de taille nb\+\_\+tuile 
+\end{DoxyReturn}

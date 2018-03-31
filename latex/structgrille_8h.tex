@@ -1,0 +1,84 @@
+\hypertarget{structgrille_8h}{}\section{src/structgrille.h File Reference}
+\label{structgrille_8h}\index{src/structgrille.\+h@{src/structgrille.\+h}}
+{\ttfamily \#include \char`\"{}pile.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgrille__s}{grille\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgrille_8h_a91a9ca0d52faf44fb23bc8051c288a64}\label{structgrille_8h_a91a9ca0d52faf44fb23bc8051c288a64}} 
+typedef struct \hyperlink{structgrille__s}{grille\+\_\+s} $\ast$ {\bfseries grille}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgrille__s}{grille} \hyperlink{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}{create} (int n)
+\begin{DoxyCompactList}\small\item\em Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. \end{DoxyCompactList}\item 
+void \hyperlink{structgrille_8h_aef63e0ea5b7083d1c3b31f746892af32}{destroy} (char $\ast$$\ast$matrix, int n)
+\begin{DoxyCompactList}\small\item\em L\+I\+B\+E\+RE L E\+S\+P\+A\+CE M\+E\+M\+O\+I\+RE DE LA G\+R\+I\+L\+LE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+1 type et 2 fonctions \+:
+
+-\/type {\itshape grille} \+: pointeur vers une structure qui contient la grille carrée et sa taille et une pile de tuile
+
+-\/create(n) \+: crée une matrice carrée de char de taille n -\/destroy(matrice,n) \+: libère l\textquotesingle{}espace mémoire d\textquotesingle{}une matrice carrée de taille n 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}\label{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}} 
+\index{structgrille.\+h@{structgrille.\+h}!create@{create}}
+\index{create@{create}!structgrille.\+h@{structgrille.\+h}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{structgrille__s}{grille} create (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille} & $>$= 6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau char$\ast$$\ast$ de la taille passée en paramètre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structgrille_8h_aef63e0ea5b7083d1c3b31f746892af32}\label{structgrille_8h_aef63e0ea5b7083d1c3b31f746892af32}} 
+\index{structgrille.\+h@{structgrille.\+h}!destroy@{destroy}}
+\index{destroy@{destroy}!structgrille.\+h@{structgrille.\+h}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{matrix,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+L\+I\+B\+E\+RE L E\+S\+P\+A\+CE M\+E\+M\+O\+I\+RE DE LA G\+R\+I\+L\+LE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille à libérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+L\+I\+B\+E\+RE L E\+S\+P\+A\+CE M\+E\+M\+O\+I\+RE DE LA G\+R\+I\+L\+LE.
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille de char , la taille de la grille\\
+\hline
+\end{DoxyParams}
+libère la mémoire allouée par la grille
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille carrée à libérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

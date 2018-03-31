@@ -1,0 +1,24 @@
+================== 1 ================== make
+PRECONDITION : décommenter le main de   structgrille.c
+
+make : donne l'executable 
+
+lot_a
+
+qui regroupe toutes les fonctions du lot A
+Affiche les tuiles créées aléatoirement ( test sans CUnit )
+
+
+
+================== 2 ================== make testunit
+PRECONDITION : commenter le main de   structgrille.c
+
+make testunit : donne l'executable
+
+testunit
+
+
+
+
+================== 3 ================== make clean
+make clean : enleve les .o et lot_a
