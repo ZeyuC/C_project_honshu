@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include <time.h>
 #include "../lotA/structure.h"
 #include "../lotA/structgrille.h"
 #include "../lotA/structure.h"

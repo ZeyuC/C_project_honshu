@@ -1,0 +1,107 @@
+\hypertarget{structure_8h}{}\section{structure.\+h File Reference}
+\label{structure_8h}\index{structure.\+h@{structure.\+h}}
+{\ttfamily \#include \char`\"{}structuile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}structgrille.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{structure_8h_a6f53c98a0472b6d3092e793d28142217}{lecture\+\_\+grille} (int x, int y, \hyperlink{structgrille__s}{grille} g)
+\begin{DoxyCompactList}\small\item\em lis la C\+O\+O\+R\+D\+O\+N\+N\+EE (x,y) DE LA G\+R\+I\+L\+LE \end{DoxyCompactList}\item 
+void \hyperlink{structure_8h_ac3a6a1a1a6397159d78fa10082711c3f}{rot\+\_\+tuile} (\hyperlink{structtuile__s}{tuile} t, char ort)
+\begin{DoxyCompactList}\small\item\em O\+R\+I\+E\+N\+TE U\+NE T\+U\+I\+LE t. \end{DoxyCompactList}\item 
+void \hyperlink{structure_8h_ad4cf8ddefff7a4a14906871bb7332ee7}{inser\+\_\+tuile} (\hyperlink{structgrille__s}{grille} g, \hyperlink{structtuile__s}{tuile} t, int x, int y)
+\begin{DoxyCompactList}\small\item\em I\+N\+S\+E\+RE LA T\+U\+I\+LE t D\+A\+NS LA G\+R\+I\+L\+LE g si la tuile n\textquotesingle{}entre pas entierement dans la grille, aucune action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3 fonctions
+
+
+\begin{DoxyItemize}
+\item lecture\+\_\+grille(x,y) \+: lis le terrain de la grille en position (x,y)
+\item rot\+\_\+tuile(t,ort) \+: donne l\textquotesingle{}orientation {\itshape ort} à la tuile
+\item inser\+\_\+tuile(g,t,x,y) \+: insert la tuile t dans la grille g en position (x,y) 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\index{structure.\+h@{structure.\+h}!inser\+\_\+tuile@{inser\+\_\+tuile}}
+\index{inser\+\_\+tuile@{inser\+\_\+tuile}!structure.\+h@{structure.\+h}}
+\subsubsection[{\texorpdfstring{inser\+\_\+tuile(grille g, tuile t, int x, int y)}{inser_tuile(grille g, tuile t, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void inser\+\_\+tuile (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g, }
+\item[{{\bf tuile}}]{t, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{structure_8h_ad4cf8ddefff7a4a14906871bb7332ee7}{}\label{structure_8h_ad4cf8ddefff7a4a14906871bb7332ee7}
+
+
+I\+N\+S\+E\+RE LA T\+U\+I\+LE t D\+A\+NS LA G\+R\+I\+L\+LE g si la tuile n\textquotesingle{}entre pas entierement dans la grille, aucune action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & g non null, t , x$>$=0 , y$>$= 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+I\+N\+S\+E\+RE LA T\+U\+I\+LE t D\+A\+NS LA G\+R\+I\+L\+LE g si la tuile n\textquotesingle{}entre pas entierement dans la grille, aucune action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & g non null, t , x$>$=0 , y$>$= 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si on a bien inseré , 1 sinon. c\textquotesingle{}est à dire la position qu\textquotesingle{}on veux poser est totalment recouvert 
+\end{DoxyReturn}
+\index{structure.\+h@{structure.\+h}!lecture\+\_\+grille@{lecture\+\_\+grille}}
+\index{lecture\+\_\+grille@{lecture\+\_\+grille}!structure.\+h@{structure.\+h}}
+\subsubsection[{\texorpdfstring{lecture\+\_\+grille(int x, int y, grille g)}{lecture_grille(int x, int y, grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}char lecture\+\_\+grille (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{structure_8h_a6f53c98a0472b6d3092e793d28142217}{}\label{structure_8h_a6f53c98a0472b6d3092e793d28142217}
+
+
+lis la C\+O\+O\+R\+D\+O\+N\+N\+EE (x,y) DE LA G\+R\+I\+L\+LE 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 0} & $<$=x $<$= g-\/$>$size , 0$<$= y $<$= g-\/$>$size , tableau char $\ast$$\ast$ g N\+OT N\+U\+LL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le char en coordonnées (x,y) de la grille g 
+\end{DoxyReturn}
+\index{structure.\+h@{structure.\+h}!rot\+\_\+tuile@{rot\+\_\+tuile}}
+\index{rot\+\_\+tuile@{rot\+\_\+tuile}!structure.\+h@{structure.\+h}}
+\subsubsection[{\texorpdfstring{rot\+\_\+tuile(tuile t, char ort)}{rot_tuile(tuile t, char ort)}}]{\setlength{\rightskip}{0pt plus 5cm}void rot\+\_\+tuile (
+\begin{DoxyParamCaption}
+\item[{{\bf tuile}}]{t, }
+\item[{char}]{ort}
+\end{DoxyParamCaption}
+)}\hypertarget{structure_8h_ac3a6a1a1a6397159d78fa10082711c3f}{}\label{structure_8h_ac3a6a1a1a6397159d78fa10082711c3f}
+
+
+O\+R\+I\+E\+N\+TE U\+NE T\+U\+I\+LE t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tuile} & t, char \char`\"{}$<$\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}v\char`\"{} ou \char`\"{}$^\wedge$\char`\"{} donnant l\textquotesingle{}orientation de la tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em tuile} & t, char \char`\"{}$<$\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}v\char`\"{} ou \char`\"{}$^\wedge$\char`\"{} donnant l\textquotesingle{}orientation de la tuile t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

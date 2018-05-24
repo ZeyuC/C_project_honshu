@@ -1,0 +1,2 @@
+doxyfile:
+	doxygen Doxyfile

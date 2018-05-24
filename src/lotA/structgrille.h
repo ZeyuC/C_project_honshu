@@ -15,7 +15,6 @@
 #define GRILLE_H
 #include "pile.h"
 
-
 struct grille_s{
   char** matrix;
   int size;
@@ -30,12 +29,6 @@ typedef struct grille_s* grille;
  */
 grille create(int n);
 
-/**
- *\brief le nombre de terrain recouvert
- *\param un grille
- *\return un entier qui est le nombre de terrain recouvert
- */
-int nombre_recouvert(grille g);
 
 /**
  *\brief LIBERE L ESPACE MEMOIRE DE LA GRILLE
@@ -43,6 +36,9 @@ int nombre_recouvert(grille g);
  *\return void
  */
 void destroy(grille g);
+
+
+
 #include "structure.h"
 
 #endif

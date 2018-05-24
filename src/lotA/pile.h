@@ -36,7 +36,7 @@ pile init();
  *\brief ajoute la tuile new en haut de la pile p
  *\param pile p et tuile new
  */
-void empile(pile *p, tuile new);
+void empile(pile *p, tuile new_t);
 
 
 /**
@@ -58,9 +58,9 @@ pile initi_tuiles(int nb_tuile);
 
 /**
  *\brief alloue dynamiquement des TUILES A PARTIR D UN FICHIER
- *\param le fichier
+ *\param fp :le fichier  et  \param nb_tuile : nombre de tuile
  *\return tableau de TUILES REMPLIES
  */
-pile initi_tuile_fichier(FILE* fp);
+pile initi_tuile_fichier(FILE* fp,int* nb_tuile);
 
 #endif

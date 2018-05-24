@@ -43,7 +43,6 @@ tuile ini_tuile();
  * terrains : a,b,c,d,e,f
  */
 tuile ini_tuile_sachant(const char a,const char b,const char c,const char d,const char e,const char f);
- 
 
 
 

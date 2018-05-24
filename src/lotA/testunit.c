@@ -95,27 +95,28 @@ void test_ini_tuile_sachant(){
 void test_initi_tuile_fichier(){
 
   FILE* fp = fopen("tuile","r");
-  tuile* pilet = initi_tuile_fichier(fp) ;
-  CU_ASSERT( pilet[0]->point[0][0] == 'U' ) ;
-  CU_ASSERT( pilet[0]->point[0][1] == 'F' ) ;
-  CU_ASSERT( pilet[0]->point[1][0] == 'R' ) ;
-  CU_ASSERT( pilet[0]->point[1][1] == 'P' ) ;
-  CU_ASSERT( pilet[0]->point[2][0] == 'V' ) ;
-  CU_ASSERT( pilet[0]->point[2][1] == 'V' ) ;
+  int* nb = (int*)malloc(sizeof(int));
+  pile pilet = initi_tuile_fichier(fp,nb) ;
+  CU_ASSERT( pilet.t[0]->point[0][0] == 'U' ) ;
+  CU_ASSERT( pilet.t[0]->point[0][1] == 'F' ) ;
+  CU_ASSERT( pilet.t[0]->point[1][0] == 'R' ) ;
+  CU_ASSERT( pilet.t[0]->point[1][1] == 'P' ) ;
+  CU_ASSERT( pilet.t[0]->point[2][0] == 'V' ) ;
+  CU_ASSERT( pilet.t[0]->point[2][1] == 'V' ) ;
 
-  CU_ASSERT( pilet[1]->point[0][0] == 'P' ) ;
-  CU_ASSERT( pilet[1]->point[0][1] == 'F' ) ;
-  CU_ASSERT( pilet[1]->point[1][0] == 'V' ) ;
-  CU_ASSERT( pilet[1]->point[1][1] == 'V' ) ;
-  CU_ASSERT( pilet[1]->point[2][0] == 'V' ) ;
-  CU_ASSERT( pilet[1]->point[2][1] == 'U' ) ;
+  CU_ASSERT( pilet.t[1]->point[0][0] == 'P' ) ;
+  CU_ASSERT( pilet.t[1]->point[0][1] == 'F' ) ;
+  CU_ASSERT( pilet.t[1]->point[1][0] == 'V' ) ;
+  CU_ASSERT( pilet.t[1]->point[1][1] == 'V' ) ;
+  CU_ASSERT( pilet.t[1]->point[2][0] == 'V' ) ;
+  CU_ASSERT( pilet.t[1]->point[2][1] == 'U' ) ;
 
-  CU_ASSERT( pilet[2]->point[0][0] == 'V' ) ;
-  CU_ASSERT( pilet[2]->point[0][1] == 'V' ) ;
-  CU_ASSERT( pilet[2]->point[1][0] == 'F' ) ;
-  CU_ASSERT( pilet[2]->point[1][1] == 'P' ) ;
-  CU_ASSERT( pilet[2]->point[2][0] == 'F' ) ;
-  CU_ASSERT( pilet[2]->point[2][1] == 'P' ) ;
+  CU_ASSERT( pilet.t[2]->point[0][0] == 'V' ) ;
+  CU_ASSERT( pilet.t[2]->point[0][1] == 'V' ) ;
+  CU_ASSERT( pilet.t[2]->point[1][0] == 'F' ) ;
+  CU_ASSERT( pilet.t[2]->point[1][1] == 'P' ) ;
+  CU_ASSERT( pilet.t[2]->point[2][0] == 'F' ) ;
+  CU_ASSERT( pilet.t[2]->point[2][1] == 'P' ) ;
 }
 
 void test_rot_tuile(){

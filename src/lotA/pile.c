@@ -17,9 +17,9 @@ pile init()
  *\brief ajoute la tuile new en haut de la pile p
  *\param pile p et tuile new
  */
-void empile(pile *p, tuile new)
+void empile(pile *p, tuile new_t)
 {
-  p->t[p->som + 1] = new;
+  p->t[p->som + 1] = new_t;
   p->som = p->som + 1;
 }
 
@@ -52,6 +52,7 @@ pile initi_tuiles(int nb_tuile)
         p_tuile.t[k] = ini_tuile(-1,-1);
         p_tuile.t[k]->num = k;
     }
+    p_tuile.som = k;
     return p_tuile;
 }
 
@@ -61,26 +62,22 @@ pile initi_tuiles(int nb_tuile)
  *\param le fichier
  *\return tableau de TUILES REMPLIES
  */
-pile initi_tuile_fichier(FILE *fp)
+pile initi_tuile_fichier(FILE *fp,int* nb_tuile)
 {
 
-    int nb_tuile,num,i,j,k;
+    int num,i,j,k;
     char buf[100];
-    fscanf(fp,"%d",&nb_tuile);
+    fscanf(fp,"%d",nb_tuile);
 
-    pile p_tuile; 
+    pile p_tuile;
+    printf("nbtuile = %d\n",*nb_tuile);
+    p_tuile.som = *nb_tuile;
 
-    p_tuile.som = nb_tuile-1; 
-
-     
-    for(i=0;i<nb_tuile;i++)
+    for(i=0;i<*nb_tuile;i++)
     {
-        p_tuile.t[i] = ini_tuile();
+      p_tuile.t[i] = ini_tuile();
         fscanf(fp,"%d",&num);
         p_tuile.t[i]->num=num;
-        p_tuile.t[i]->ort='^';
-        p_tuile.t[i]->pos[0] = -1;
-        p_tuile.t[i]->pos[1] = -1;
 
         for(j=0;j<3;j++)
         {
@@ -93,7 +90,6 @@ pile initi_tuile_fichier(FILE *fp)
                  else {
                   printf("Les types de terrains ne peuvent etre que U,V,P,L,F,R.Veuillez changer le fichier\n");
                   p_tuile.som = -1;
-            
                  }
             }
 
@@ -101,4 +97,3 @@ pile initi_tuile_fichier(FILE *fp)
     }
     return p_tuile;
 }
-

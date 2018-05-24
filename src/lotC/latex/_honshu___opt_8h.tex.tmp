@@ -1,0 +1,117 @@
+\hypertarget{_honshu___opt_8h}{}\section{Honshu\+\_\+\+Opt.\+h File Reference}
+\label{_honshu___opt_8h}\index{Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}}
+{\ttfamily \#include \char`\"{}../lot\+A/structgrille.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lot\+A/structuile.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lot\+A/structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lot\+B/village.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../lot\+B/recouvrement.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}retrait.\+h\char`\"{}}\newline
+Include dependency graph for Honshu\+\_\+\+Opt.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_honshu___opt_8h_ae5bce5c6cfa9ff08ae493a7a17d912a0}{score} (grille g)
+\begin{DoxyCompactList}\small\item\em Affichage du score atteint par la grille actuelle. \end{DoxyCompactList}\item 
+void \hyperlink{_honshu___opt_8h_ad55fb450a69fb8849d457616d72df087}{rappel\+\_\+moyens} ()
+\begin{DoxyCompactList}\small\item\em Rappel des moyens de gagner des points affiché lors de l’exécution d’une commande. \end{DoxyCompactList}\item 
+int \hyperlink{_honshu___opt_8h_aaf4c052833dd6b320ebd2eae3aee0089}{Honshu\+\_\+\+Opt} (grille g, pile p)
+\begin{DoxyCompactList}\small\item\em Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande. \end{DoxyCompactList}\item 
+int \hyperlink{_honshu___opt_8h_aed1ce4734d658baea9d82f6d0c0961b8}{solveur} (grille g, pile p, pile res, int a)
+\begin{DoxyCompactList}\small\item\em Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3 fonctions \+: -\/affiche\+\_\+score (grille l)\+: Affichage du score atteint par la grille actuelle
+
+-\/rappel\+\_\+moyens() \+: Rappel des moyens de gagner des points affiché lors de l’exécution d’une commande
+
+-\/\+Honshu\+\_\+\+Opt(grille g,) \+: Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande
+
+
+\begin{DoxyItemize}
+\item un type terrain 3 fonctions \+: -\/int score (grille g)\+: Affichage du score atteint par la grille actuelle
+
+-\/void \hyperlink{_honshu___opt_8h_ad55fb450a69fb8849d457616d72df087}{rappel\+\_\+moyens()} \+: Rappel des moyens de gagner des points affiché lors de l’exécution d’une commande
+
+-\/\+Honshu\+\_\+\+Opt(grille g,) \+: Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_honshu___opt_8h_aaf4c052833dd6b320ebd2eae3aee0089}\label{_honshu___opt_8h_aaf4c052833dd6b320ebd2eae3aee0089}} 
+\index{Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}!Honshu\+\_\+\+Opt@{Honshu\+\_\+\+Opt}}
+\index{Honshu\+\_\+\+Opt@{Honshu\+\_\+\+Opt}!Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}}
+\subsubsection{\texorpdfstring{Honshu\+\_\+\+Opt()}{Honshu\_Opt()}}
+{\footnotesize\ttfamily int Honshu\+\_\+\+Opt (\begin{DoxyParamCaption}\item[{grille}]{g,  }\item[{pile}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & grille une tableau tuile P une tableau tuile M \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une grille avec la solution opt
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em un} & grille un pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une grille avec la solution opt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_honshu___opt_8h_ad55fb450a69fb8849d457616d72df087}\label{_honshu___opt_8h_ad55fb450a69fb8849d457616d72df087}} 
+\index{Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}!rappel\+\_\+moyens@{rappel\+\_\+moyens}}
+\index{rappel\+\_\+moyens@{rappel\+\_\+moyens}!Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}}
+\subsubsection{\texorpdfstring{rappel\+\_\+moyens()}{rappel\_moyens()}}
+{\footnotesize\ttfamily void rappel\+\_\+moyens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rappel des moyens de gagner des points affiché lors de l’exécution d’une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_honshu___opt_8h_ae5bce5c6cfa9ff08ae493a7a17d912a0}\label{_honshu___opt_8h_ae5bce5c6cfa9ff08ae493a7a17d912a0}} 
+\index{Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}!score@{score}}
+\index{score@{score}!Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}}
+\subsubsection{\texorpdfstring{score()}{score()}}
+{\footnotesize\ttfamily int score (\begin{DoxyParamCaption}\item[{grille}]{g }\end{DoxyParamCaption})}
+
+
+
+Affichage du score atteint par la grille actuelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier qui est le score atteint par la grille actuelle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_honshu___opt_8h_aed1ce4734d658baea9d82f6d0c0961b8}\label{_honshu___opt_8h_aed1ce4734d658baea9d82f6d0c0961b8}} 
+\index{Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}!solveur@{solveur}}
+\index{solveur@{solveur}!Honshu\+\_\+\+Opt.\+h@{Honshu\+\_\+\+Opt.\+h}}
+\subsubsection{\texorpdfstring{solveur()}{solveur()}}
+{\footnotesize\ttfamily int solveur (\begin{DoxyParamCaption}\item[{grille}]{g,  }\item[{pile}]{pt,  }\item[{pile}]{res,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Affichage de la solution trouvée (grille et points) par votre solveur lors de l’exécution d’une commande. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & grille un pile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une grille avec la solution opt 
+\end{DoxyReturn}

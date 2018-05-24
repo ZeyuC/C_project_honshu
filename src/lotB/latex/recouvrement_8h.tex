@@ -1,0 +1,262 @@
+\hypertarget{recouvrement_8h}{}\section{recouvrement.\+h File Reference}
+\label{recouvrement_8h}\index{recouvrement.\+h@{recouvrement.\+h}}
+{\ttfamily \#include \char`\"{}../lot\+A/structgrille.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../lot\+A/structuile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../lot\+A/structure.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structterrain__s}{terrain\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structterrain__s}{terrain\+\_\+s} $\ast$ {\bfseries terrain}\hypertarget{recouvrement_8h_a77274ba094f111ca4e27a8350adbf419}{}\label{recouvrement_8h_a77274ba094f111ca4e27a8350adbf419}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{recouvrement_8h_a2d43682b3653eebc2cd14cdd3efb873f}{nombre\+\_\+recouvert} (grille g)
+\begin{DoxyCompactList}\small\item\em le nombre de terrain recouvert \end{DoxyCompactList}\item 
+\hyperlink{structterrain__s}{terrain} $\ast$ \hyperlink{recouvrement_8h_a49d8dd223791c2bded6c9ba313b174ea}{ter\+\_\+recouvert} (grille l, int n)
+\begin{DoxyCompactList}\small\item\em Liste des terrains recouverts sur le plateau. \end{DoxyCompactList}\item 
+\hyperlink{structterrain__s}{terrain} $\ast$ \hyperlink{recouvrement_8h_a64da25b782097c7bd416fc44f36bc26e}{ter\+\_\+recouvert\+\_\+tuile} (grille l, tuile tuile\+\_\+s, int x, int y)
+\begin{DoxyCompactList}\small\item\em Liste des terrains recouverts par une tuile si on essaie de la poser sur le plateau. \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \hyperlink{recouvrement_8h_ad100b2d1b01c1df2375ba12921373321}{list\+\_\+pos} (grille g, int k)
+\begin{DoxyCompactList}\small\item\em donne la liste des positions occupées par la tuile à la place k dans la pile de la grille \end{DoxyCompactList}\item 
+int \hyperlink{recouvrement_8h_a48094d1c9b6669cc63792d93d7941925}{tuile\+\_\+of} (grille g, int x, int y)
+\begin{DoxyCompactList}\small\item\em donne l\textquotesingle{}indice dans la pile de la grille de la tuile dont une case est en (x,y) \end{DoxyCompactList}\item 
+int \hyperlink{recouvrement_8h_ae3abaa6de2817b213db7c7bd5fa70405}{test\+\_\+fully\+\_\+covered} (grille g, int k)
+\begin{DoxyCompactList}\small\item\em test si la tuile d\textquotesingle{}indice k dans la pile de la grille n\textquotesingle{}est pas totalement recouverte \end{DoxyCompactList}\item 
+int \hyperlink{recouvrement_8h_a2852f01270279f4c69397fd40a9f2dee}{test\+\_\+limite} (grille g, tuile t, int x, int y)
+\begin{DoxyCompactList}\small\item\em vérifie que l\textquotesingle{}on respecte la limite de la zone \end{DoxyCompactList}\item 
+int \hyperlink{recouvrement_8h_acaeea002d53d7cfd60245c7cfe75218f}{recouvre\+\_\+ancien} (grille g, tuile t, int x, int y)
+\begin{DoxyCompactList}\small\item\em on vérifie pour une nouvelle tuile qu\textquotesingle{}au moins une de ses cases recouvre autre chose que \textquotesingle{}.\textquotesingle{} \end{DoxyCompactList}\item 
+int \hyperlink{recouvrement_8h_abe22a37a44976cdf3ae4ac6a02bb8adc}{testlac} (grille g, tuile t, int x, int y)
+\begin{DoxyCompactList}\small\item\em on vérifie pour chaque tuile si elle est posée sur une case Lac \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3 fonctions \+:
+\begin{DoxyItemize}
+\item un type terrain -\/ter\+\_\+recouvert (grille l)\+: Liste des terrains recouverts sur le plateau
+\end{DoxyItemize}
+
+-\/ter\+\_\+recouvert\+\_\+tuile(grille l, pile p) \+: Liste des terrains recouverts par une tuile si on essaie de la poser sur le plateau -\/test\+\_\+recouvert \+: Test de la règle Une tuile ne peut être totalement recouverte à aucun moment de la partie 
+
+\subsection{Function Documentation}
+\index{recouvrement.\+h@{recouvrement.\+h}!list\+\_\+pos@{list\+\_\+pos}}
+\index{list\+\_\+pos@{list\+\_\+pos}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{list\+\_\+pos(grille g, int k)}{list_pos(grille g, int k)}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ list\+\_\+pos (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_ad100b2d1b01c1df2375ba12921373321}{}\label{recouvrement_8h_ad100b2d1b01c1df2375ba12921373321}
+
+
+donne la liste des positions occupées par la tuile à la place k dans la pile de la grille 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille et un entier k tel que k$<$=pile\+\_\+tuile.\+som \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retourne la liste des positions de la tuile voulu 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!nombre\+\_\+recouvert@{nombre\+\_\+recouvert}}
+\index{nombre\+\_\+recouvert@{nombre\+\_\+recouvert}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{nombre\+\_\+recouvert(grille g)}{nombre_recouvert(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}int nombre\+\_\+recouvert (
+\begin{DoxyParamCaption}
+\item[{grille}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_a2d43682b3653eebc2cd14cdd3efb873f}{}\label{recouvrement_8h_a2d43682b3653eebc2cd14cdd3efb873f}
+
+
+le nombre de terrain recouvert 
+
+
+\begin{DoxyParams}{Parameters}
+{\em un} & grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier qui est le nombre de terrain recouvert
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier qui est le nombre de terrain recouvert 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!recouvre\+\_\+ancien@{recouvre\+\_\+ancien}}
+\index{recouvre\+\_\+ancien@{recouvre\+\_\+ancien}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{recouvre\+\_\+ancien(grille g, tuile t, int x, int y)}{recouvre_ancien(grille g, tuile t, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int recouvre\+\_\+ancien (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{tuile}]{t, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_acaeea002d53d7cfd60245c7cfe75218f}{}\label{recouvrement_8h_acaeea002d53d7cfd60245c7cfe75218f}
+
+
+on vérifie pour une nouvelle tuile qu\textquotesingle{}au moins une de ses cases recouvre autre chose que \textquotesingle{}.\textquotesingle{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & g, tuile t , position de la tuile x et y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la règle est respectée et 0 sinon 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!ter\+\_\+recouvert@{ter\+\_\+recouvert}}
+\index{ter\+\_\+recouvert@{ter\+\_\+recouvert}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{ter\+\_\+recouvert(grille l, int n)}{ter_recouvert(grille l, int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf terrain}$\ast$ ter\+\_\+recouvert (
+\begin{DoxyParamCaption}
+\item[{grille}]{l, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_a49d8dd223791c2bded6c9ba313b174ea}{}\label{recouvrement_8h_a49d8dd223791c2bded6c9ba313b174ea}
+
+
+Liste des terrains recouverts sur le plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de type terrain qui contient les coordonnées des terrains recouverts
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille et nombre de terrains recouverts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de type terrain qui contient les coordonnées des terrains recouverts 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!ter\+\_\+recouvert\+\_\+tuile@{ter\+\_\+recouvert\+\_\+tuile}}
+\index{ter\+\_\+recouvert\+\_\+tuile@{ter\+\_\+recouvert\+\_\+tuile}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{ter\+\_\+recouvert\+\_\+tuile(grille l, tuile tuile\+\_\+s, int x, int y)}{ter_recouvert_tuile(grille l, tuile tuile_s, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf terrain}$\ast$ ter\+\_\+recouvert\+\_\+tuile (
+\begin{DoxyParamCaption}
+\item[{grille}]{l, }
+\item[{tuile}]{tuile\+\_\+s, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_a64da25b782097c7bd416fc44f36bc26e}{}\label{recouvrement_8h_a64da25b782097c7bd416fc44f36bc26e}
+
+
+Liste des terrains recouverts par une tuile si on essaie de la poser sur le plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille et une tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de type terrain qui contient les coordonnées des terrains recouverts par une tuile 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!test\+\_\+fully\+\_\+covered@{test\+\_\+fully\+\_\+covered}}
+\index{test\+\_\+fully\+\_\+covered@{test\+\_\+fully\+\_\+covered}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{test\+\_\+fully\+\_\+covered(grille g, int k)}{test_fully_covered(grille g, int k)}}]{\setlength{\rightskip}{0pt plus 5cm}int test\+\_\+fully\+\_\+covered (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_ae3abaa6de2817b213db7c7bd5fa70405}{}\label{recouvrement_8h_ae3abaa6de2817b213db7c7bd5fa70405}
+
+
+test si la tuile d\textquotesingle{}indice k dans la pile de la grille n\textquotesingle{}est pas totalement recouverte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille et un entier k $<$= taille de la pile de la grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si elle n\textquotesingle{}est pas totalement recouverte 0 sinon 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!test\+\_\+limite@{test\+\_\+limite}}
+\index{test\+\_\+limite@{test\+\_\+limite}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{test\+\_\+limite(grille g, tuile t, int x, int y)}{test_limite(grille g, tuile t, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int test\+\_\+limite (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{tuile}]{t, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_a2852f01270279f4c69397fd40a9f2dee}{}\label{recouvrement_8h_a2852f01270279f4c69397fd40a9f2dee}
+
+
+vérifie que l\textquotesingle{}on respecte la limite de la zone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille, une tuile et sa position x et y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si le test échoue 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!testlac@{testlac}}
+\index{testlac@{testlac}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{testlac(grille g, tuile t, int x, int y)}{testlac(grille g, tuile t, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int testlac (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{tuile}]{t, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_abe22a37a44976cdf3ae4ac6a02bb8adc}{}\label{recouvrement_8h_abe22a37a44976cdf3ae4ac6a02bb8adc}
+
+
+on vérifie pour chaque tuile si elle est posée sur une case Lac 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & pile p des tuiles, la grille g \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la règle est respectée et 0 sinon
+\end{DoxyReturn}
+on vérifie pour chaque tuile si elle est posée sur une case Lac
+
+
+\begin{DoxyParams}{Parameters}
+{\em grille} & g, tuile t et les position de cette tuile x et y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si la règle est respectée et 0 sinon 
+\end{DoxyReturn}
+\index{recouvrement.\+h@{recouvrement.\+h}!tuile\+\_\+of@{tuile\+\_\+of}}
+\index{tuile\+\_\+of@{tuile\+\_\+of}!recouvrement.\+h@{recouvrement.\+h}}
+\subsubsection[{\texorpdfstring{tuile\+\_\+of(grille g, int x, int y)}{tuile_of(grille g, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int tuile\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{grille}]{g, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{recouvrement_8h_a48094d1c9b6669cc63792d93d7941925}{}\label{recouvrement_8h_a48094d1c9b6669cc63792d93d7941925}
+
+
+donne l\textquotesingle{}indice dans la pile de la grille de la tuile dont une case est en (x,y) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & grille et une position donnée par 2 entier x et y tel que (x,y) soit dans la grille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le numéro de la tuile s\textquotesingle{}il y en a une qui occupe cette position et -\/1 sinon 
+\end{DoxyReturn}

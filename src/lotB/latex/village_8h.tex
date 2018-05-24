@@ -1,0 +1,85 @@
+\hypertarget{village_8h}{}\section{village.\+h File Reference}
+\label{village_8h}\index{village.\+h@{village.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{village_8h_a045ff8c26a3c21b29819592c5b2f1b80}{trouver\+\_\+ville} (int x, int y, grille g)
+\begin{DoxyCompactList}\small\item\em retourne la ville associée au village en (x,y), si ville il y a \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries coord\+\_\+village} \mbox{[}size\mbox{]}\mbox{[}2\mbox{]}
+\item 
+int {\bfseries vec} \mbox{[}size $\ast$size\mbox{]}\mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+3 fonctions
+
+
+\begin{DoxyItemize}
+\item trouver\+\_\+village(grille g); \+: donne un vecteur avec les coordonnées de chaque village de la grille
+\item presence(int x, int y, vectur v) \+: vérifie si la case (x,y) est un village
+\item \hyperlink{village_8h_a045ff8c26a3c21b29819592c5b2f1b80}{trouver\+\_\+ville(int x, int y, grille g)} \+: donne les coordonnées des villages de la ville du village (x,y), si ville il y a 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\index{village.\+h@{village.\+h}!trouver\+\_\+ville@{trouver\+\_\+ville}}
+\index{trouver\+\_\+ville@{trouver\+\_\+ville}!village.\+h@{village.\+h}}
+\subsubsection[{\texorpdfstring{trouver\+\_\+ville(int x, int y, grille g)}{trouver_ville(int x, int y, grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void trouver\+\_\+ville (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{grille}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{village_8h_a045ff8c26a3c21b29819592c5b2f1b80}{}\label{village_8h_a045ff8c26a3c21b29819592c5b2f1b80}
+
+
+retourne la ville associée au village en (x,y), si ville il y a 
+
+
+\begin{DoxyParams}{Parameters}
+{\em les} & cordonnées x et y, la grille g \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur vec avec les coordonées des villages de la ville du village (x,y) 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{village.\+h@{village.\+h}!coord\+\_\+village@{coord\+\_\+village}}
+\index{coord\+\_\+village@{coord\+\_\+village}!village.\+h@{village.\+h}}
+\subsubsection[{\texorpdfstring{coord\+\_\+village}{coord_village}}]{\setlength{\rightskip}{0pt plus 5cm}int coord\+\_\+village\mbox{[}size\mbox{]}\mbox{[}2\mbox{]}}\hypertarget{village_8h_a5ba7193ea84e4cbd40ee50066df7195e}{}\label{village_8h_a5ba7193ea84e4cbd40ee50066df7195e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{keywordflow}{for} (i=0; i<=size; i++)\{
+        printf(\textcolor{stringliteral}{"\{0,0\},"});
+    \}
+    printf(\textcolor{stringliteral}{"\{0,0\}"});
+\}
+
+
+
+
+\textcolor{keywordtype}{void} trouver\_village(grille g)
+\end{DoxyCode}
+\index{village.\+h@{village.\+h}!vec@{vec}}
+\index{vec@{vec}!village.\+h@{village.\+h}}
+\subsubsection[{\texorpdfstring{vec}{vec}}]{\setlength{\rightskip}{0pt plus 5cm}int vec\mbox{[}size $\ast$size\mbox{]}\mbox{[}2\mbox{]}}\hypertarget{village_8h_ab69e8b3534752e90e6f0ad6e61578083}{}\label{village_8h_ab69e8b3534752e90e6f0ad6e61578083}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{keywordflow}{for} (i=0; i<=size; i++)\{
+        printf(\textcolor{stringliteral}{"\{-1,-1\},"});
+    \}
+    printf(\textcolor{stringliteral}{"\{-1,-1\}"});
+\}
+
+
+
+
+\textcolor{keywordtype}{int} presence(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, vecteur v)
+\end{DoxyCode}

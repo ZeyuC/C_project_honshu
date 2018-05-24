@@ -8,10 +8,10 @@
 /**
  *\brief CREE ET REMPLI ALEATOIREMENT UNE TUILE
  */
-tuile ini_tuile(int x,int y){
+tuile ini_tuile(){
   int i,j,a;
   char context[6]={'F','L','P','R','U','V'};
-  tuile t = (tuile)malloc(sizeof(tuile));
+  tuile t = (tuile)malloc(sizeof(struct tuile_s));
   for (i = 0; i < 3; i++){
     for(j = 0; j < 2; j++){
       a = rand()%6;
@@ -19,8 +19,8 @@ tuile ini_tuile(int x,int y){
     }
   }
   t->ort = '^';
-  t->pos[0] = x;
-  t->pos[1] = y;
+  t->pos[0] = -1;
+  t->pos[1] = -1;
   t->num    = -1;
   return t;
 }
@@ -45,5 +45,4 @@ tuile ini_tuile_sachant(const char a,const char b,const char c,const char d,cons
   t->num    = -1;
   return t;
 }
-
 

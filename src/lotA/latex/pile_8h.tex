@@ -1,0 +1,125 @@
+\hypertarget{pile_8h}{}\section{pile.\+h File Reference}
+\label{pile_8h}\index{pile.\+h@{pile.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}structuile.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpile}{pile}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries M\+AX}~100\hypertarget{pile_8h_a392fb874e547e582e9c66a08a1f23326}{}\label{pile_8h_a392fb874e547e582e9c66a08a1f23326}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpile}{pile} \hyperlink{pile_8h_ad1984d7c55bf88c136f35de4392f3adc}{init} ()\hypertarget{pile_8h_ad1984d7c55bf88c136f35de4392f3adc}{}\label{pile_8h_ad1984d7c55bf88c136f35de4392f3adc}
+
+\begin{DoxyCompactList}\small\item\em crée une pile vide p \end{DoxyCompactList}\item 
+void \hyperlink{pile_8h_a5b67400605b7605b972cd78b74156ed8}{empile} (\hyperlink{structpile}{pile} $\ast$p, \hyperlink{structtuile__s}{tuile} new)
+\begin{DoxyCompactList}\small\item\em ajoute la tuile new en haut de la pile p \end{DoxyCompactList}\item 
+\hyperlink{structtuile__s}{tuile} \hyperlink{pile_8h_a2a3fc324aa03f679f4ce1a8d879c8fdb}{depile} (\hyperlink{structpile}{pile} $\ast$p)
+\begin{DoxyCompactList}\small\item\em retire la tuile au sommet de p \end{DoxyCompactList}\item 
+\hyperlink{structpile}{pile} \hyperlink{pile_8h_a270a44b52e904842175e2607d990fd73}{initi\+\_\+tuiles} (int nb\+\_\+tuile)
+\begin{DoxyCompactList}\small\item\em alloue dynamiquement et A\+L\+E\+A\+T\+O\+I\+R\+E\+M\+E\+NT nb\+\_\+tuiles T\+U\+I\+L\+ES \end{DoxyCompactList}\item 
+\hyperlink{structpile}{pile} \hyperlink{pile_8h_a27841cb21aa3e786d81353b9731617cf}{initi\+\_\+tuile\+\_\+fichier} (F\+I\+LE $\ast$fp, int $\ast$nb\+\_\+tuile)
+\begin{DoxyCompactList}\small\item\em alloue dynamiquement des T\+U\+I\+L\+ES A P\+A\+R\+T\+IR D UN F\+I\+C\+H\+I\+ER \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+1 type et 3 fonctions \+:
+
+-\/type {\itshape pile} \+: structure qui contient un tableau de tuiles et le nombre de tuiles qu\textquotesingle{}elle contient
+
+-\/init() \+: crée une pile vide -\/empile(p,new) \+: ajoute la tuile new en haut de la pile p -\/depile(p) \+: retire la tuile au sommet de p 
+
+\subsection{Function Documentation}
+\index{pile.\+h@{pile.\+h}!depile@{depile}}
+\index{depile@{depile}!pile.\+h@{pile.\+h}}
+\subsubsection[{\texorpdfstring{depile(pile $\ast$p)}{depile(pile *p)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tuile} depile (
+\begin{DoxyParamCaption}
+\item[{{\bf pile} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{pile_8h_a2a3fc324aa03f679f4ce1a8d879c8fdb}{}\label{pile_8h_a2a3fc324aa03f679f4ce1a8d879c8fdb}
+
+
+retire la tuile au sommet de p 
+
+
+\begin{DoxyParams}{Parameters}
+{\em une} & pile p \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la tuile retirée du sommet de p 
+\end{DoxyReturn}
+\index{pile.\+h@{pile.\+h}!empile@{empile}}
+\index{empile@{empile}!pile.\+h@{pile.\+h}}
+\subsubsection[{\texorpdfstring{empile(pile $\ast$p, tuile new)}{empile(pile *p, tuile new)}}]{\setlength{\rightskip}{0pt plus 5cm}void empile (
+\begin{DoxyParamCaption}
+\item[{{\bf pile} $\ast$}]{p, }
+\item[{{\bf tuile}}]{new}
+\end{DoxyParamCaption}
+)}\hypertarget{pile_8h_a5b67400605b7605b972cd78b74156ed8}{}\label{pile_8h_a5b67400605b7605b972cd78b74156ed8}
+
+
+ajoute la tuile new en haut de la pile p 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pile} & p et tuile new \\
+\hline
+\end{DoxyParams}
+\index{pile.\+h@{pile.\+h}!initi\+\_\+tuile\+\_\+fichier@{initi\+\_\+tuile\+\_\+fichier}}
+\index{initi\+\_\+tuile\+\_\+fichier@{initi\+\_\+tuile\+\_\+fichier}!pile.\+h@{pile.\+h}}
+\subsubsection[{\texorpdfstring{initi\+\_\+tuile\+\_\+fichier(\+F\+I\+L\+E $\ast$fp, int $\ast$nb\+\_\+tuile)}{initi_tuile_fichier(FILE *fp, int *nb_tuile)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pile} initi\+\_\+tuile\+\_\+fichier (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fp, }
+\item[{int $\ast$}]{nb\+\_\+tuile}
+\end{DoxyParamCaption}
+)}\hypertarget{pile_8h_a27841cb21aa3e786d81353b9731617cf}{}\label{pile_8h_a27841cb21aa3e786d81353b9731617cf}
+
+
+alloue dynamiquement des T\+U\+I\+L\+ES A P\+A\+R\+T\+IR D UN F\+I\+C\+H\+I\+ER 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & \+:le fichier et \\
+\hline
+{\em nb\+\_\+tuile} & \+: nombre de tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tableau de T\+U\+I\+L\+ES R\+E\+M\+P\+L\+I\+ES
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em le} & fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tableau de T\+U\+I\+L\+ES R\+E\+M\+P\+L\+I\+ES 
+\end{DoxyReturn}
+\index{pile.\+h@{pile.\+h}!initi\+\_\+tuiles@{initi\+\_\+tuiles}}
+\index{initi\+\_\+tuiles@{initi\+\_\+tuiles}!pile.\+h@{pile.\+h}}
+\subsubsection[{\texorpdfstring{initi\+\_\+tuiles(int nb\+\_\+tuile)}{initi_tuiles(int nb_tuile)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pile} initi\+\_\+tuiles (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\+\_\+tuile}
+\end{DoxyParamCaption}
+)}\hypertarget{pile_8h_a270a44b52e904842175e2607d990fd73}{}\label{pile_8h_a270a44b52e904842175e2607d990fd73}
+
+
+alloue dynamiquement et A\+L\+E\+A\+T\+O\+I\+R\+E\+M\+E\+NT nb\+\_\+tuiles T\+U\+I\+L\+ES 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+tuile} & \+: nombre de tuile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un tableau de tuiles de taille nb\+\_\+tuile 
+\end{DoxyReturn}

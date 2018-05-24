@@ -2,9 +2,8 @@ CC = gcc -Wall -Wextra -ansi -g
 
 all : main
 
-main: main.c lotA/structgrille.c lotA/structuile.c lotA/pile.c lotA/structure.c lotB/recouvrement.c
+main: main_test_recouvrement.c lotA/structgrille.c lotA/structuile.c lotA/pile.c lotA/structure.c lotB/recouvrement.c lotB/village.c lotC/retrait.c lotC/Honshu_Opt.c
 	$(CC) $^ -o $@
-
 lot : structure.o structuile.o structgrille.o pile.o recouvrement.o
 	$(CC)  $^ -o $@
 
@@ -28,10 +27,10 @@ testunit: testunit.o structure.o structuile.o structgrille.o pile.o
 
 recouvrement.o : recouvrement.o recouvrement.o
 
+
 clean:
 	git rm -f *.o
 	git rm lot_a
-
 
 
 

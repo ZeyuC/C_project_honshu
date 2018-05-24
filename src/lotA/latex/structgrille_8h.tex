@@ -1,0 +1,70 @@
+\hypertarget{structgrille_8h}{}\section{structgrille.\+h File Reference}
+\label{structgrille_8h}\index{structgrille.\+h@{structgrille.\+h}}
+{\ttfamily \#include \char`\"{}pile.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgrille__s}{grille\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structgrille__s}{grille\+\_\+s} $\ast$ {\bfseries grille}\hypertarget{structgrille_8h_a91a9ca0d52faf44fb23bc8051c288a64}{}\label{structgrille_8h_a91a9ca0d52faf44fb23bc8051c288a64}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgrille__s}{grille} \hyperlink{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}{create} (int n)
+\begin{DoxyCompactList}\small\item\em Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. \end{DoxyCompactList}\item 
+void \hyperlink{structgrille_8h_a3a228024d8590d266fbacc04508f6b3d}{destroy} (\hyperlink{structgrille__s}{grille} g)
+\begin{DoxyCompactList}\small\item\em L\+I\+B\+E\+RE L E\+S\+P\+A\+CE M\+E\+M\+O\+I\+RE DE LA G\+R\+I\+L\+LE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+1 type et 2 fonctions \+:
+
+-\/type {\itshape grille} \+: pointeur vers une structure qui contient la grille carrée et sa taille et une pile de tuile
+
+-\/create(n) \+: crée une grille de taille n -\/destroy(g) \+: libère l\textquotesingle{}espace mémoire de la grille g 
+
+\subsection{Function Documentation}
+\index{structgrille.\+h@{structgrille.\+h}!create@{create}}
+\index{create@{create}!structgrille.\+h@{structgrille.\+h}}
+\subsubsection[{\texorpdfstring{create(int n)}{create(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf grille} create (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}{}\label{structgrille_8h_a40c09a650dbbf641fe431f7bfc028d26}
+
+
+Alloue D\+Y\+N\+A\+M\+I\+Q\+U\+E\+M\+E\+NT et I\+N\+I\+T\+I\+A\+L\+I\+SE U\+NE G\+R\+I\+L\+LE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em taille} & $>$= 5 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+une grille g de taille n 
+\end{DoxyReturn}
+\index{structgrille.\+h@{structgrille.\+h}!destroy@{destroy}}
+\index{destroy@{destroy}!structgrille.\+h@{structgrille.\+h}}
+\subsubsection[{\texorpdfstring{destroy(grille g)}{destroy(grille g)}}]{\setlength{\rightskip}{0pt plus 5cm}void destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf grille}}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{structgrille_8h_a3a228024d8590d266fbacc04508f6b3d}{}\label{structgrille_8h_a3a228024d8590d266fbacc04508f6b3d}
+
+
+L\+I\+B\+E\+RE L E\+S\+P\+A\+CE M\+E\+M\+O\+I\+RE DE LA G\+R\+I\+L\+LE. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & grille à libérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

@@ -22,35 +22,14 @@
        g->matrix[i][j]='.';
      }
    }
-   tuile t = ini_tuile(-1,-1);
+   tuile t = ini_tuile();
    t->ort = '<';
    t->num = -1;
    inser_tuile(g,t,(int)(n+1)/2, (int)(n-1)/2);
  	 return g ;
  }
 
-/**
- *\brief le nombre de terrain recouvert
- *\param un grille
- *\return un entier qui est le nombre de terrain recouvert
- */
-int nombre_recouvert(grille g)
-{
-    int count=0,i,j;
-    int size = g->size;
-    
-    for (i = 0; i < size; i++)
-    {
-      for (j = 0; j < size ; j++)
-      {
-        if(g->matrix[i][j]!='.')
-              {
-                count++;
-              }
-      }
-    }
-    return count;
-}
+
 
 
 /**
@@ -64,8 +43,11 @@ void destroy(grille g){
      free(g->matrix[i]);
   }
   free(g->matrix);
+  free(g->pile_tuile.t[0]);
   free(g);
 }
+
+
 
 /*int main(){
   int i,j;
